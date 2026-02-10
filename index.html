@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Special Gift For You 💝</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===== SECTION 1: GIFT BOX ===== -->
+  <section id="scene-gift" class="scene active">
+    <div class="sparkles" id="sparkles"></div>
+    <p class="gift-hint" id="giftHint">✨ Tap the gift to open ✨</p>
+    <div id="giftBox" class="gift-box-img" role="button" tabindex="0">
+      <img src="gift-closed.png" alt="Gift Box Closed" id="giftClosed" class="box-state active" />
+      <img src="gift-open.png" alt="Gift Box Open" id="giftOpen" class="box-state" />
+    </div>
+    <div id="confettiLayer" class="fx-layer"></div>
+    <div id="heartsLayer" class="fx-layer"></div>
+    <div id="blackOverlay" class="black-overlay"></div>
+  </section>
+
+  <!-- ===== SECTION 2: BIRTHDAY CAKE ===== -->
+  <section id="scene-cake" class="scene">
+    <!-- EDIT NAME HERE -->
+    <h1 class="cake-title" id="cakeTitle">Happy Birthday <span class="name">Sunshine</span> 🎂</h1>
+    <div class="cake-wrap">
+      <div class="cake">
+        <div class="candles">
+          <div class="candle">
+            <div class="wick"></div>
+            <div class="flame-w">
+              <div class="flame"></div>
+              <div class="glow"></div>
+            </div>
+            <div class="smoke-w"></div>
+          </div>
+          <div class="candle">
+            <div class="wick"></div>
+            <div class="flame-w">
+              <div class="flame"></div>
+              <div class="glow"></div>
+            </div>
+            <div class="smoke-w"></div>
+          </div>
+          <div class="candle">
+            <div class="wick"></div>
+            <div class="flame-w">
+              <div class="flame"></div>
+              <div class="glow"></div>
+            </div>
+            <div class="smoke-w"></div>
+          </div>
+          <div class="candle">
+            <div class="wick"></div>
+            <div class="flame-w">
+              <div class="flame"></div>
+              <div class="glow"></div>
+            </div>
+            <div class="smoke-w"></div>
+          </div>
+          <div class="candle">
+            <div class="wick"></div>
+            <div class="flame-w">
+              <div class="flame"></div>
+              <div class="glow"></div>
+            </div>
+            <div class="smoke-w"></div>
+          </div>
+        </div>
+        <div class="tier tier-top">
+          <div class="drip d1"></div>
+          <div class="drip d2"></div>
+          <div class="drip d3"></div>
+          <div class="drip d4"></div>
+          <div class="drip d5"></div>
+        </div>
+        <div class="tier tier-mid"></div>
+        <div class="tier tier-bot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
+            class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span
+            class="dot"></span></div>
+        <div class="plate"></div>
+      </div>
+    </div>
+    <p class="blow-hint" id="blowHint">🌬️ Click each candle to blow them out!</p>
+    <button id="keepGoingBtn" class="nav-btn hidden">Keep Going ✨ →</button>
+  </section>
+
+  <!-- ===== SECTION 3: POLAROID GALLERY ===== -->
+  <section id="scene-gallery" class="scene">
+    <h2 class="sec-title gallery-t">Our Memory Lane 💕</h2>
+    <div class="gallery" id="gallery">
+      <div class="polaroid" data-caption="The day we first met 💫" data-date="Jan 2023"
+        style="--rx:-8deg;--tx:-120px;--ty:30px;">
+        <div class="pol-img"
+          style="background:linear-gradient(135deg, rgba(248, 200, 220, 0.3), rgba(253, 226, 228, 0.3)), url('firstMeet.png'); background-size:cover; background-position:center;">
+        </div>
+        <p class="pol-lbl">First Meet</p>
+      </div>
+      <div class="polaroid" data-caption="That road trip we'll never forget 🚗" data-date="Mar 2023"
+        style="--rx:5deg;--tx:80px;--ty:-40px;">
+        <div class="pol-img"
+          style="background:linear-gradient(135deg, rgba(201, 228, 222, 0.3), rgba(162, 210, 255, 0.3)), url('roadTrip.png'); background-size:cover; background-position:center;">
+        </div>
+        <p class="pol-lbl">Road Trip</p>
+      </div>
+      <div class="polaroid" data-caption="Laughing until we cried 😂" data-date="Jun 2023"
+        style="--rx:-3deg;--tx:-60px;--ty:-80px;">
+        <div class="pol-img"
+          style="background:linear-gradient(135deg, rgba(253, 226, 228, 0.3), rgba(250, 210, 207, 0.3)), url('laughter.png'); background-size:cover; background-position:center;">
+        </div>
+        <p class="pol-lbl">Laughter</p>
+      </div>
+      <div class="polaroid" data-caption="Our favorite sunset together 🌅" data-date="Sep 2023"
+        style="--rx:10deg;--tx:140px;--ty:60px;">
+        <div class="pol-img"
+          style="background:linear-gradient(135deg, rgba(240, 198, 117, 0.3), rgba(255, 183, 178, 0.3)), url('sunSet.png'); background-size:cover; background-position:center;">
+        </div>
+        <p class="pol-lbl">Sunset</p>
+      </div>
+      <div class="polaroid" data-caption="Celebrating small wins 🥂" data-date="Dec 2023"
+        style="--rx:-12deg;--tx:20px;--ty:90px;">
+        <div class="pol-img"
+          style="background:linear-gradient(135deg, rgba(212, 165, 165, 0.3), rgba(232, 160, 191, 0.3)), url('Celebration.png'); background-size:cover; background-position:center;">
+        </div>
+        <p class="pol-lbl">Cheers!</p>
+      </div>
+      <div class="polaroid" data-caption="Just us being us 💖" data-date="Feb 2024"
+        style="--rx:7deg;--tx:-150px;--ty:-20px;">
+        <div class="pol-img"
+          style="background:linear-gradient(135deg, rgba(181, 199, 163, 0.3), rgba(212, 224, 155, 0.3)), url('us.png'); background-size:cover; background-position:center;">
+        </div>
+        <p class="pol-lbl">Us</p>
+      </div>
+    </div>
+    <div id="photoOverlay" class="overlay hidden">
+      <div class="ov-card">
+        <div class="ov-img"></div>
+        <p class="ov-cap"></p>
+        <p class="ov-date"></p><button class="ov-close">✕</button>
+      </div>
+    </div>
+    <button id="toBouquetBtn" class="nav-btn gallery-nav hidden">A Message For You 💐 →</button>
+  </section>
+
+  <!-- ===== SECTION 4: VIRTUAL BOUQUET ===== -->
+  <section id="scene-bouquet" class="scene">
+    <canvas id="petalCanvas" class="petal-cv"></canvas>
+    <h2 class="sec-title bouq-t">Pick a Flower, Read a Message 🌸</h2>
+    <div class="bouquet">
+      <div class="flower rose" data-flower="rose"
+        data-message="You came into my life and painted every grey day with color. I never knew how empty my world was until you filled it with your laughter, your kindness, and your incredible soul. You are the most beautiful thing that ever happened to me, and I thank the universe every single day for bringing you to me. Happy Birthday, my love. You deserve every star in the sky.">
+        <div class="f-head">
+          <div class="petal p1"></div>
+          <div class="petal p2"></div>
+          <div class="petal p3"></div>
+          <div class="petal p4"></div>
+          <div class="petal p5"></div>
+          <div class="petal p6"></div>
+          <div class="petal p7"></div>
+          <div class="petal p8"></div>
+          <div class="f-ctr"></div>
+        </div>
+        <div class="f-stem">
+          <div class="leaf lf-l"></div>
+          <div class="leaf lf-r"></div>
+        </div>
+        <p class="f-lbl">Rose</p>
+      </div>
+      <div class="flower tulip" data-flower="tulip"
+        data-message="Do you remember that time we stayed up until 3 AM talking about absolutely nothing and everything at the same time? Those are the moments I live for. Not the big trips or the fancy dinners, but the quiet, silly, beautiful in-between moments where it's just you and me against the world. I wouldn't trade a single second of it.">
+        <div class="f-head">
+          <div class="tp tp1"></div>
+          <div class="tp tp2"></div>
+          <div class="tp tp3"></div>
+          <div class="tp tp4"></div>
+        </div>
+        <div class="f-stem">
+          <div class="leaf lf-l"></div>
+        </div>
+        <p class="f-lbl">Tulip</p>
+      </div>
+      <div class="flower lily" data-flower="lily"
+        data-message="I want you to know something important: you are enough. On the days when you doubt yourself, when the world feels heavy, when you wonder if you are doing okay — you are more than okay. You are brilliant, brave, and so deeply loved. I see you, all of you, and I wouldn't change a single thing. This birthday, I hope you see yourself the way I see you: absolutely perfect.">
+        <div class="f-head">
+          <div class="lp lp1"></div>
+          <div class="lp lp2"></div>
+          <div class="lp lp3"></div>
+          <div class="lp lp4"></div>
+          <div class="lp lp5"></div>
+          <div class="lp lp6"></div>
+          <div class="f-ctr lily-c"></div>
+        </div>
+        <div class="f-stem">
+          <div class="leaf lf-r"></div>
+        </div>
+        <p class="f-lbl">Lily</p>
+      </div>
+      <div class="flower sunflower" data-flower="sunflower"
+        data-message="Here is my promise to you: I will always choose you. In every timeline, in every universe, in every version of this life — it will always be you. I promise to be your safe place, your biggest fan, your shoulder to cry on, and your partner in every adventure. Happy Birthday to the one person who makes everything make sense. I love you endlessly. 💛">
+        <div class="f-head">
+          <div class="sf sp1"></div>
+          <div class="sf sp2"></div>
+          <div class="sf sp3"></div>
+          <div class="sf sp4"></div>
+          <div class="sf sp5"></div>
+          <div class="sf sp6"></div>
+          <div class="sf sp7"></div>
+          <div class="sf sp8"></div>
+          <div class="sf sp9"></div>
+          <div class="sf sp10"></div>
+          <div class="sf sp11"></div>
+          <div class="sf sp12"></div>
+          <div class="f-ctr sf-c"></div>
+        </div>
+        <div class="f-stem">
+          <div class="leaf lf-l"></div>
+          <div class="leaf lf-r"></div>
+        </div>
+        <p class="f-lbl">Sunflower</p>
+      </div>
+    </div>
+    <div id="flowerModal" class="overlay hidden">
+      <div class="modal-card">
+        <div class="modal-flower-visual" id="modalFlowerVisual"></div>
+        <div class="modal-icon"></div>
+        <p class="modal-msg"></p><button class="modal-close">Close 💌</button>
+      </div>
+    </div>
+    <p class="bouq-footer">Made with all my love, just for you 💝</p>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
